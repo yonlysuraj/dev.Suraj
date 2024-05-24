@@ -8,7 +8,7 @@ const Education = () => {
     <div className='services'>
       <div className="services">
         <div className="services-title">
-        <h1>My Education</h1>
+        <h1>My Services</h1>
         <img src={theme_pattern} alt="No img" />
         </div>
         <div className="services-container">
