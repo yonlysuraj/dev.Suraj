@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import pfp from '../../assets/about_profile.svg'
+import pfp from '../../assets/pfp2.jpg'
 const About = () => {
   return (
     <div id='about' className='about'>
@@ -15,8 +15,8 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-para">
-                    <p>Hello! I'm [Your Name], a passionate and dedicated [Your Profession or Title], specializing in [Your Area of Expertise]. With a strong foundation in [Your Field or Industry], I have honed my skills over [X] years of hands-on experience, bringing a blend of creativity, technical proficiency, and innovative thinking to every project I undertake.</p>
-                    <p>My journey in [Your Field or Industry] began with [a brief mention of how you started, education, or early influences]. Since then, I have had the privilege of working with [mention any notable companies, clients, or projects], where I have contributed to [highlight specific achievements, projects, or roles]. These experiences have equipped me with a comprehensive understanding of [specific skills or tools you are proficient in], allowing me to deliver solutions that are both aesthetically pleasing and functionally robust.</p>
+                    <p>Hello! I'm Suraj Mallick, a passionate and dedicated Web Developer, specializing in MERN Stack. With a strong foundation in Computer Science, I have honed my skills over 3 years of hands-on experience in my college, bringing a blend of creativity, technical proficiency, and innovative thinking to every project I undertake.</p>
+                    <p>My journey in Computer Science began with my love towards video games from my childhood days . Since then, I have had the privilege of working with passion. These experiences have equipped me with a comprehensive understanding of the role of a Computer Science Engineer, allowing me to deliver solutions that are both aesthetically pleasing and functionally robust.</p>
                 </div>
                 <div className="about-skills">
                     <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"50%"}}/></div>
