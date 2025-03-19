@@ -1,88 +1,121 @@
-.hero{
+.hero {
     display: flex;
+    flex-direction: row;  /* Changed from row to row-reverse */
     align-items: center;
-    flex-direction: column;
-    gap: 35px;
+    justify-content: space-evenly;
+    padding: 70px 80px 70px 120px;
 }
 
-.hero img{
-    width:25%;
+.hero img {
+    width: 500px;  /* Reduced from 500px */
+    height: 500px;  /* Reduced from 500px */
     border-radius: 50%;
-    margin-top:30px;
-}
-.hero h1{
-    text-align: center;
-    width: 70%;
-    font-size: 90px;
-    font-weight: 600;
+    object-fit: cover;
+    margin-top: -40px;
+    margin-right: -20px;
 }
 
-.hero h1 span{
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0;  /* Removed auto to shift right */
+    padding-right: 0;  /* Reduce right padding */
+}
+
+.hero h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 54px;  /* Reduced from 72px */
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.hero h1 span {
     background: grey;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.hero p{
-    width: 50%;
+
+.hero p {
+    width: 100%;
     text-align: center;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 22px;  /* Slightly reduced for better proportion */
+    line-height: 1.6;
+    margin: 0;
+    color: #888;
 }
-.hero-action{
+
+.hero-action {
     display: flex;
     align-items: center;
+    justify-content: center;  /* Center the buttons */
     gap: 25px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-top: 20px;
 }
-.hero-connect{
-    padding:25px 45px;
+
+.hero-connect {
+    padding: 25px 45px;
     border-radius: 50px;
     background: grey;
     cursor: pointer;
 }
-.hero-resume{
+
+.hero-resume {
     padding: 25px 75px;
     border-radius: 50px;
-    border:2px solid #ffff;
+    border: 2px solid #ffff;
     cursor: pointer;
 }
-.hero-connect:hover{
+
+.hero-connect:hover {
     border: 2px solid white;
 }
-.hero-resume:hover{
+
+.hero-resume:hover {
     border-color: grey;
 }
 
-@media(max-width:768px) {
-    .hero img{
-        margin-top: 120px;
-        width: 260px;
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
     }
-    .hero h1{
-        margin-top: 50px;
-        width: 90%;
-        font-size: 50px;
+
+    .hero img {
+        width: 300px;  /* Slightly increased from 280px */
+        height: 300px;  /* Slightly increased from 280px */
+        margin-top: 60px;
     }
-    .hero p{
-        width: 60%;
+
+    .hero h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .hero p {
+        text-align: center;
         font-size: 18px;
-        line-height: 32px;
-        margin: 10px 0px;
     }
-    .hero-action{
-        gap: 16px;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 50px;
+
+    .hero-action {
+        justify-content: center;
     }
-    .hero-connect{
+
+    .hero-connect {
         padding: 20px 20px;
         border-radius: 40px;
     }
-    .hero-resume{
+
+    .hero-resume {
         padding: 20px 30px;
         border-radius: 40px;
     }
