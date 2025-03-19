@@ -11,7 +11,8 @@
     height: 500px;  /* Reduced from 500px */
     border-radius: 50%;
     object-fit: cover;
-    margin-top: -40px;
+    margin-top: 10px;
+    margin-bottom: 100px;
     margin-right: -20px;
 }
 
@@ -66,20 +67,36 @@
     border-radius: 50px;
     background: grey;
     cursor: pointer;
+    transition: all 0.3s ease;  /* Added transition */
+}
+
+.hero-connect a {
+    color: #fff; /* Make text white */
+    text-decoration: none;
 }
 
 .hero-resume {
     padding: 25px 75px;
     border-radius: 50px;
-    border: 2px solid #ffff;
+    border: 2px solid #fff;
     cursor: pointer;
+    color: #fff;  /* Added white color */
+    transition: all 0.3s ease;  /* Added transition */
 }
 
 .hero-connect:hover {
-    border: 2px solid white;
+    transform: scale(1.05);  /* Added scale effect */
+    background: #fff;
+    color: #1a1a1a;  /* Change text color on hover */
+}
+
+.hero-connect:hover a {
+    color: #1a1a1a; /* Change text color on hover */
 }
 
 .hero-resume:hover {
+    transform: scale(1.05);  /* Added scale effect */
+    background: grey;
     border-color: grey;
 }
 
