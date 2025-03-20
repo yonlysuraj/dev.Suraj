@@ -3,7 +3,7 @@
     flex-direction: row;  /* Changed from row to row-reverse */
     align-items: center;
     justify-content: space-evenly;
-    padding: 70px 80px 70px 120px;
+    padding: 70px 80px 90px 120px;
 }
 
 .hero img {

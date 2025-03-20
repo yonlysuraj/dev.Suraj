@@ -3,8 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px; /* Reduced from 80px */
-    margin: 60px 120px; /* Reduced from 80px 170px */
+    gap: 50px;
+    margin: 60px auto; /* Changed to auto for horizontal centering */
+    max-width: 1200px; /* Added max-width to match Services */
+    padding: 0 40px; /* Added padding instead of large margins */
 }
 .about-title{
     position: relative;
@@ -96,9 +98,10 @@
     transition: o.5s;
 }
 @media (max-width:768px) {
-    .about{
-        gap: 80px;
-        margin: 50px 70px;
+    .about {
+        gap: 40px;
+        margin: 40px auto;
+        padding: 0 20px;
         align-items: start;
     }
     .about-title h1{
