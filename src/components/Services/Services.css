@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;  /* Reduced from 80px to create even spacing */
+    gap: 40px;
     margin: 80px 170px;
     padding: 4rem 2rem;
 }
@@ -11,7 +11,7 @@
 .services-title {
     position: relative;
     text-align: center;
-    margin-bottom: 2rem;  /* Reduced from 4rem for better spacing */
+    margin-bottom: 2rem;
 }
 
 .services-title img {
@@ -29,11 +29,10 @@
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Changed to fixed 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     max-width: 1400px;
-    margin: 0;
-    justify-content: start;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -42,15 +41,16 @@
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    padding: 2.5rem; /* Reduced padding */
+    padding: 2.5rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.4s ease;
     cursor: pointer;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    min-height: 280px; /* Reduced height */
-    max-width: 350px; /* Added max-width for thinner boxes */
+    min-height: 280px;
+    max-width: 350px;
+    text-align: center;
 }
 
 .services-format:hover {
@@ -60,11 +60,43 @@
     box-shadow: 0 12px 30px rgba(128, 128, 128, 0.2);
 }
 
-.services-format h3 {
-    font-size: 28px;
-    font-weight: 600;
+/* Icon Styling */
+.service-icon {
+    color: #888;
+    transition: all 0.3s ease-in-out;
 }
 
+.services-format:hover .service-icon {
+    color: inherit;
+    text-shadow: 0 0 12px currentColor;
+}
+
+/* Specific icon colors on hover */
+.services-format:nth-child(1):hover .service-icon { 
+    color: #61DBFB;
+}
+
+.services-format:nth-child(2):hover .service-icon { 
+    color: #ff6f00;
+}
+
+.services-format:nth-child(3):hover .service-icon { 
+    color: #FF9900;
+}
+
+.services-format:nth-child(4):hover .service-icon { 
+    color: #00ff00;
+}
+
+.services-format:nth-child(5):hover .service-icon { 
+    color: #00758f;
+}
+
+.services-format:nth-child(6):hover .service-icon { 
+    color: #ffff;
+}
+
+/* Text Styling */
 .services-format h2 {
     font-size: 28px;
     font-weight: 600;
@@ -72,7 +104,7 @@
     color: white;
 }
 
-.service-format p {
+.services-format p {
     color: #888;
     font-size: 18px;
     line-height: 1.8;
@@ -89,15 +121,9 @@
 .service-header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* This will push items to edges */
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 1.5rem;
-}
-
-.service-icon {
-    color: grey;
-    font-size: 48px; /* Keeps the icon slightly pulled to right */
-    margin-right: -10px;
 }
 
 .service-number {
@@ -106,9 +132,10 @@
     font-weight: 500;
 }
 
+/* Responsive Design */
 @media (max-width: 1200px) {
     .services-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -116,12 +143,11 @@
     .services {
         margin: 40px 20px;
         padding: 2rem 1rem;
-        gap: 30px;  /* Reduced gap for mobile */
-        align-items: flex-start;  /* Ensure left alignment on mobile */
+        gap: 30px;
+        align-items: flex-start;
     }
 
     .services-title h1 {
-        padding: 0;
         font-size: 42px;
     }
 
@@ -131,7 +157,7 @@
     }
 
     .services-container {
-        grid-template-columns: 1fr; /* 1 column on mobile */
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
 
@@ -142,7 +168,7 @@
     }
 
     .service-icon {
-        font-size: 36px; /* Adjusted for mobile but still larger */
+        font-size: 36px;
     }
 
     .services-format h2 {
