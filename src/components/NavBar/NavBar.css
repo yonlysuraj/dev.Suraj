@@ -49,10 +49,10 @@
 }
 
 .nav-connect {
-    padding: 20px 30px;
-    border-radius: 50px;
+    padding: 14px 28px;  /* Increased padding */
+    border-radius: 30px;
     background: gray;
-    font-size: 24px;
+    font-size: 18px;     /* Increased font size */
     cursor: pointer;
     transition: all 0.3s ease;
     color: #fff;
@@ -143,7 +143,7 @@
     }
 
     .nav-connect {
-        display: none;
+        display: none; /* Hide the connect button on mobile */
     }
 
     .nav-mob-open {
@@ -253,4 +253,5 @@
         padding: 10px 20px;
         font-size: 14px;
     }
+    
 }
