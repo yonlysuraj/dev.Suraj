@@ -1,9 +1,8 @@
 import React, { useState, useRef } from 'react';
 import './NavBar.css';
-import logo from '../../assets/logo.svg';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
   const [menu, setMenu] = useState('home');
@@ -12,7 +11,10 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    menuRef.current.style.right = !isMenuOpen ? "0" : "-100%";
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -32,27 +34,27 @@ const Navbar = () => {
       />
       <ul ref={menuRef} className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <li className={menu === 'home' ? 'active' : ''}>
-          <AnchorLink className='anchor-link' href='#home' onClick={() => {setMenu('home'); toggleMenu();}}>
+          <AnchorLink className='anchor-link' href='#home' onClick={() => {setMenu('home'); closeMenu();}}>
             <p>Home</p>
           </AnchorLink>
         </li>
         <li className={menu === 'about' ? 'active' : ''}>
-          <AnchorLink className='anchor-link' offset={50} href='#about' onClick={() => {setMenu('about'); toggleMenu();}}>
+          <AnchorLink className='anchor-link' offset={50} href='#about' onClick={() => {setMenu('about'); closeMenu();}}>
             <p>About me</p>
           </AnchorLink>
         </li>
         <li className={menu === 'services' ? 'active' : ''}>
-          <AnchorLink className='anchor-link' offset={50} href='#services' onClick={() => {setMenu('services'); toggleMenu();}}>
+          <AnchorLink className='anchor-link' offset={50} href='#services' onClick={() => {setMenu('services'); closeMenu();}}>
             <p>Services</p>
           </AnchorLink>
         </li>
         <li className={menu === 'work' ? 'active' : ''}>
-          <AnchorLink className='anchor-link' offset={50} href='#work' onClick={() => {setMenu('work'); toggleMenu();}}>
+          <AnchorLink className='anchor-link' offset={50} href='#work' onClick={() => {setMenu('work'); closeMenu();}}>
             <p>Projects</p>
           </AnchorLink>
         </li>
         <li className={menu === 'contact' ? 'active' : ''}>
-          <AnchorLink className='anchor-link' offset={50} href='#contact' onClick={() => {setMenu('contact'); toggleMenu();}}>
+          <AnchorLink className='anchor-link' offset={50} href='#contact' onClick={() => {setMenu('contact'); closeMenu();}}>
             <p>Contact me</p>
           </AnchorLink>
         </li>

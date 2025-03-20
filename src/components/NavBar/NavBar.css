@@ -120,13 +120,26 @@
 
 @media (max-width: 768px) {
     .navbar {
-        margin: 0 30px;
-        width: calc(100% - 60px);
-        height: 100px;
+        margin: 0;
+        padding: 0 10px; /* Reduced padding */
+        width: 100%;
+        height: 60px; /* Reduced height */
+        box-sizing: border-box;
+        background: #1a1a1a;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 98;
+        display: flex;
+        justify-content: space-between; /* Added for better spacing */
+        align-items: center;
     }
 
     .navbar h1 {
-        font-size: 32px;
+        font-size: 24px; /* Reduced size */
+        margin: 0; /* Remove auto margins */
+        margin-right: auto; /* Keep this to push heading left */
+        padding-left: 0; /* Remove any padding */
     }
 
     .nav-connect {
@@ -135,25 +148,30 @@
 
     .nav-mob-open {
         display: block;
-        position: fixed;
-        top: 45px;
-        right: 30px;
-        width: 35px;
-        height: 35px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        width: 25px;
+        height: 25px;
         cursor: pointer;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 100;
+        margin-left: 0; /* Remove auto margin */
     }
 
     .nav-mob-close {
         display: block;
-        position: fixed;
-        top: 45px;
-        right: 30px;
-        width: 35px;
-        height: 35px;
+        position: fixed; /* Changed from absolute */
+        top: 17px; /* Adjusted position */
+        right: 10px;
+        width: 25px; /* Reduced size */
+        height: 25px;
         cursor: pointer;
         opacity: 0;
         visibility: hidden;
-        transition: all 0.3s ease;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 101; /* Increased z-index */
     }
 
     .nav-menu {
@@ -161,16 +179,19 @@
         flex-direction: column;
         align-items: start;
         top: 0;
-        right: -100%;
-        width: 300px;
+        right: -100%; /* Changed from left to right */
+        width: 180px; /* Reduced width */
         height: 100vh;
         background-color: #1a1a1a;
-        transition: 0.3s ease;
+        transition: right 0.3s ease; /* Changed from left to right */
+        padding-top: 60px; /* Match navbar height */
+        z-index: 99;
+        box-sizing: border-box;
     }
 
     .nav-menu.open {
-        right: 0;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        right: 0; /* Changed from left to right */
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); /* Changed shadow direction */
     }
 
     .nav-mob-close.show {
@@ -184,8 +205,10 @@
     }
 
     .nav-menu li {
-        font-size: 18px;
-        padding: 15px 40px;
+        font-size: 16px;
+        padding: 12px 25px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .nav-connect {
@@ -197,5 +220,37 @@
 
     .nav-connect:hover {
         transform: scale(1.05);
+    }
+
+    /* Add margin to the main content to prevent overlap with fixed navbar */
+    body {
+        padding-top: 80px;
+    }
+}
+
+/* Add specific styles for 430px screens */
+@media (max-width: 430px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .navbar h1 {
+        margin: 0; /* Ensure no margins */
+    }
+
+    .nav-mob-open,
+    .nav-mob-close {
+        width: 22px; /* Even smaller for mobile */
+        height: 22px;
+        right: 8px; /* Move slightly more inward */
+    }
+
+    .nav-menu {
+        width: 160px; /* Smaller menu width */
+    }
+
+    .nav-menu li {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }
