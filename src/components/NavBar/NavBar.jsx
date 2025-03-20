@@ -18,6 +18,15 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    setMenu('home');
+    closeMenu();
+  };
+
   return (
     <nav className='navbar'>
       <h1>dev.<span>Suraj</span></h1>
@@ -35,9 +44,9 @@ const Navbar = () => {
       />
       <ul ref={menuRef} className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <li className={menu === 'home' ? 'active' : ''}>
-          <AnchorLink className='anchor-link' href='#home' onClick={() => {setMenu('home'); closeMenu();}}>
+          <a className='anchor-link' onClick={scrollToTop} style={{cursor: 'pointer'}}>
             <p>Home</p>
-          </AnchorLink>
+          </a>
         </li>
         <li className={menu === 'about' ? 'active' : ''}>
           <AnchorLink className='anchor-link' offset={50} href='#about' onClick={() => {setMenu('about'); closeMenu();}}>
