@@ -198,6 +198,7 @@
 
     .services-container {
         grid-template-columns: 1fr;
+        margin-left: -2.5%; /* Adjusted margin */ 
         gap: 2rem;
     }
 

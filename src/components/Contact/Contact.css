@@ -160,6 +160,8 @@
 
     .contact-section {
         flex-direction: column;
+        margin-left: -7%;
+        gap: 30px;
         gap: 40px;
     }
 
