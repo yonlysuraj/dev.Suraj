@@ -36,19 +36,19 @@ const Hero = () => {
           <div className="hero-resume">My resume</div>
         </div>
         <div className="hero-social">
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/y_onlysuraj" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faXTwitter} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/suraj-mallick-ez/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a href="https://github.com/yonlysuraj" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/itzsurazzz/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://discord.com/users/yourid" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.com/users/surajuwu" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faDiscord} />
           </a>
         </div>

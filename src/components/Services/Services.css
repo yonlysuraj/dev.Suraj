@@ -165,10 +165,63 @@
         gap: 20px;
         padding: 2rem;
         min-height: auto;
+        transform: none;
+        transition: none;
+    }
+
+    .services-format:hover {
+        transform: none;
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+        box-shadow: none;
+    }
+
+    /* Always show icon colors and glow on mobile */
+    .services-format:nth-child(1) .service-icon { 
+        color: #61DBFB;
+        text-shadow: 0 0 12px #61DBFB;
+        filter: drop-shadow(0 0 8px #61DBFB) brightness(1.5);
+        text-shadow: 0 0 15px #61DBFB, 0 0 25px #61DBFB;
+    }
+
+    .services-format:nth-child(2) .service-icon { 
+        color: #ed92f5;
+        text-shadow: 0 0 12px #ed92f5;
+        filter: drop-shadow(0 0 8px #ed92f5) brightness(1.5);
+        text-shadow: 0 0 15px #ed92f5, 0 0 25px #ed92f5;
+    }
+
+    .services-format:nth-child(3) .service-icon { 
+        color: #FF9900;
+        text-shadow: 0 0 12px #FF9900;
+        filter: drop-shadow(0 0 8px #FF9900) brightness(1.5);
+        text-shadow: 0 0 15px #FF9900, 0 0 25px #FF9900;
+    }
+
+    .services-format:nth-child(4) .service-icon { 
+        color: #00ff00;
+        text-shadow: 0 0 12px #00ff00;
+        filter: drop-shadow(0 0 8px #00ff00) brightness(1.5);
+        text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00;
+    }
+
+    .services-format:nth-child(5) .service-icon { 
+        color: #00758f;
+        text-shadow: 0 0 12px #00758f;
+        filter: drop-shadow(0 0 8px #00758f) brightness(1.5);
+        text-shadow: 0 0 15px #00758f, 0 0 25px #00758f;
+    }
+
+    .services-format:nth-child(6) .service-icon { 
+        color: #ffff;
+        text-shadow: 0 0 12px #ffff;
+        filter: drop-shadow(0 0 8px #ffffff) brightness(1.5);
+        text-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff;
     }
 
     .service-icon {
         font-size: 36px;
+        transition: none;
     }
 
     .services-format h2 {
