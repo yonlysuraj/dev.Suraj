@@ -161,6 +161,7 @@
         padding: 0 20px;
         align-items: center;  /* Changed from start to center */
         text-align: center;
+        margin-top: -5%;
     }
 
     .about-title {
