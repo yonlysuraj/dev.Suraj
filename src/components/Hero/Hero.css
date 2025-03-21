@@ -148,9 +148,16 @@
     transform: translateY(-3px);
 }
 
+/* Update the Twitter/X hover selector for web view */
+.hero-social a[href*="x.com"]:hover {
+    color: #fff;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    transform: translateY(-3px);
+}
+
 /* Remove the underline effect */
 .hero-social a::after {
-    display: none;
+    display: none;  
 }
 
 /* Mobile Styles */
@@ -253,6 +260,16 @@
     .hero-social a[href*="discord"]:hover {
         color: #7289DA;
         filter: drop-shadow(0 0 8px rgba(114, 137, 218, 0.8));
+    }
+
+    .hero-social a[href*="x.com"]:hover {
+        color: #fff;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    }
+
+    .hero-social a[href*="x.com"] {
+        color: #fff;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
     }
 
     .hero-social a::after {
