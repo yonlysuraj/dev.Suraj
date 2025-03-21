@@ -23,8 +23,7 @@ const MyWork = () => {
   return (
     <div id='work' className='my-work'>
       <div className="my-work-title">
-        <h1>My Latest Work</h1>
-        <img src={theme_pattern} alt="" />
+        <h1>Latest Work<span>.</span></h1>
       </div>
       <div className="my-work-container">
         {loading ? (

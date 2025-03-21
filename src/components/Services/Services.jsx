@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <div id="services" className="services">
       <div className="services-title">
-        <h1>My Services</h1>
+        <h1>My Services<span>.</span></h1>
         <img src={theme_pattern} alt="Theme Pattern" />
       </div>
       <div className="services-container">

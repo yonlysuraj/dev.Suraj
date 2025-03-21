@@ -10,7 +10,6 @@ q.my-work{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 50px;
     margin: 60px auto;
     max-width: 1200px;
@@ -18,26 +17,46 @@ q.my-work{
 }
 .my-work-title{
     position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
 }
 .my-work-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-bottom: 50px;
     text-align: center;
 }
 .my-work-title h1{
-    padding: 0px 20px;
-    font-size: 60px;  /* Reduced from 80px to match About section */
-    font-weight: 600;
+    font-size: 48px;
+    font-weight: 700;
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
 .my-work-title h1 {
-    font-size: 80px;
-    font-weight: 600;
+    font-size: 48px;
+    font-weight: 700;
     color: #fff;
-    padding: 0px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.my-work-title span {
+    color: #61DBFB;
+    font-weight: 800;
+}
+.my-work-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #61DBFB, transparent);
+    border-radius: 2px;
 }
 /* Remove or comment out the duplicate h1 style with gradient */
 /* .my-work-title h1 {
@@ -46,13 +65,10 @@ q.my-work{
     ...
 } */
 .my-work-title img{
-    position: absolute;
-    bottom:0;
-    right:0;
-    z-index: -1;
+    display: none;
 }
 .my-work-title img {
-    width: 250px;
+    display: none;
 }
 .my-work-container{
     display: grid;
@@ -167,19 +183,23 @@ q.my-work{
 }
 @media (max-width:768px) {
     .my-work{
-        gap: 40px;
+        gap: 30px;
         margin: 40px auto;
         padding: 0 20px;
-        align-items: start;
+        align-items: center;
     }
     .my-work-title h1{
         padding: 0;
-        font-size: 50px;
+        font-size: 38px;
         font-weight: 600;
     }
     .my-work-title img{
         width: 130px;
         right: -20px;
+    }
+    .my-work-title::after {
+        width: 40px;
+        height: 3px;
     }
     .my-work-container{
         grid-template-columns: repeat(2, 1fr);
@@ -204,6 +224,14 @@ q.my-work{
     .repo-card a {
         padding: 10px 20px;
         font-size: 14px;
+    }
+    .my-work-title h1 {
+        font-size: 38px;
+    }
+
+    .my-work-title::after {
+        width: 40px;
+        height: 3px;
     }
 }
 @media (max-width: 480px) {
