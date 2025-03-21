@@ -3,19 +3,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px;
-    margin: 60px auto;
+    gap: 40px; /* Reduced from 60px */
+    margin: 40px auto; /* Reduced from 60px */
     max-width: 1200px;
     padding: 0 20px;
+    min-height: calc(100vh - 60px); /* Account for navbar */
 }
 
 .contact-title {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced from 20px */
 }
 
 .contact-title h1 {
-    font-size: 72px;
+    font-size: 60px; /* Reduced from 72px */
     font-weight: 600;
     color: #fff;
     text-align: center;
@@ -30,7 +31,7 @@
 
 .contact-section {
     display: flex;
-    gap: 80px;
+    gap: 60px; /* Reduced from 80px */
     width: 100%;
 }
 
@@ -38,11 +39,11 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px; /* Reduced from 40px */
 }
 
 .contact-left h1 {
-    font-size: 42px;
+    font-size: 36px; /* Reduced from 42px */
     font-weight: 600;
     color: #888;
 }
@@ -79,7 +80,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px; /* Reduced from 25px */
 }
 
 .contact-right label {
@@ -91,7 +92,7 @@
 .contact-right input,
 .contact-right textarea {
     width: 100%;
-    padding: 15px;
+    padding: 12px; /* Reduced from 15px */
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid #333;
     border-radius: 8px;
