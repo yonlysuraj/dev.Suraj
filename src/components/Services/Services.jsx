@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Services.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import ServicesData from "../../assets/services_data";
@@ -14,6 +14,26 @@ const icons = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show'); // Remove class when out of view
+        }
+      });
+    }, { 
+      threshold: 0.1, // Reduced threshold for faster trigger
+      rootMargin: '50px' // Added margin to trigger earlier
+    });
+
+    const serviceCards = document.querySelectorAll('.services-format');
+    serviceCards.forEach(card => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div id="services" className="services">
       <div className="services-title">
@@ -24,7 +44,7 @@ const Services = () => {
         {ServicesData.map((service, index) => {
           const IconComponent = icons[index]?.component || FaCode;
           return (
-            <div key={index} className="services-format">
+            <div key={index} className="services-format fade-up">
               <div className="service-header">
                 <span className="service-number">{service.s_no}</span>
                 <IconComponent
