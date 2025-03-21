@@ -3,35 +3,34 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 70px 80px 90px 120px;
+    padding: 20px 80px;
+    min-height: calc(100vh - 60px); /* Account for navbar height */
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .hero img {
-    width: 500px;
-    height: 500px;
+    width: 450px; /* Increased from 400px */
+    height: 450px; /* Increased from 400px */
     border-radius: 50%;
     object-fit: cover;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    margin-right: -20px;
+    margin-top: -5%;
+    margin-bottom: 0;
+    margin-right: 0;
 }
 
 .hero-content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     max-width: 600px;
     text-align: center;
-    margin: 0;
-    padding-right: 0;
+    padding: 0 20px;
 }
 
 .hero h1 {
-    text-align: center;
-    width: 100%;
-    font-size: 54px;
-    font-weight: 600;
+    font-size: 48px; /* Slightly reduced */
     line-height: 1.2;
     margin: 0;
 }
@@ -105,8 +104,8 @@
 .hero-social {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
+    gap: 35px;
+    margin-top: 20px; /* Reduced margin */
 }
 
 .hero-social a {
