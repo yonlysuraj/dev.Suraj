@@ -18,6 +18,9 @@ const App = () => {
       <div id="about">
         <About />
       </div>
+      <div id="education">
+        <Education />
+      </div>
       <div id="services">
         <Services />
       </div>
