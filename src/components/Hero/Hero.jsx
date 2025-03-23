@@ -5,6 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { TypeAnimation } from 'react-type-animation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faInstagram, faDiscord, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import Resume from '../../assets/SurajMallickResume.pdf'
 
 const Hero = () => {
   return (
@@ -33,7 +34,17 @@ const Hero = () => {
           <div className="hero-connect">
             <AnchorLink className='acnchor-link' offset={50} href='#contact'>Connect with me</AnchorLink>
           </div>
-          <div className="hero-resume">My resume</div>
+          <a 
+            href={Resume} 
+            download="SurajMallick_Resume.pdf"
+            className="hero-resume"
+            style={{ textDecoration: 'none' }}
+            target="_blank"
+            rel="noopener noreferrer"
+            type="application/pdf"
+          >
+            My resume
+          </a>
         </div>
         <div className="hero-social">
           <a href="https://x.com/y_onlysuraj" target="_blank" rel="noopener noreferrer">
