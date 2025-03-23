@@ -7,6 +7,7 @@
     margin: 60px auto; /* Changed to auto for horizontal centering */
     max-width: 1200px; /* Added max-width to match Services */
     padding: 0 40px; /* Added padding instead of large margins */
+    margin-bottom: 15%;
 }
 
 .about-title {
@@ -56,10 +57,12 @@
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    margin-top: -10px;
 }
 
 .about-left::after {
     content: '';
+    margin-top: -20px;
     position: absolute;
     top: 15px;
     left: 15px;
@@ -165,7 +168,7 @@
     }
 
     .about-title {
-        margin-bottom: 25px;  /* Slightly increased from 20px */
+        margin-bottom: 20px;  /* Slightly increased from 20px */
         width: 100%;
     }
 
@@ -192,6 +195,7 @@
         line-height: 1.8;
         gap: 15px;  /* Increased from 12px */
         text-align: center;  /* Ensure text is centered */
+        margin-bottom: 50px;
     }
 
     .about-skill {
