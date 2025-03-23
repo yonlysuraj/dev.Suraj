@@ -7,11 +7,15 @@
     margin: 80px auto;
     max-width: 1200px;
     padding: 4rem 2rem;
+    position: relative;
+    z-index: 2;  /* Keep services section above particles */
 }
 
 .services-title {
     position: relative;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 2;  /* Keep title above particles */
 }
 
 .services-title h1 {
@@ -52,6 +56,8 @@
     max-width: 1400px;
     margin: 0 auto;
     width: 100%;
+    position: relative;
+    z-index: 2;  /* Keep container above particles */
 }
 
 .services-format {
@@ -69,6 +75,8 @@
     min-height: 450px; /* Increased height */
     max-width: 320px; /* Reduced width */
     text-align: center;
+    position: relative;
+    z-index: 2;  /* Keep service cards above particles */
 }
 
 .services-format:hover {
@@ -76,6 +84,7 @@
     background: rgba(128, 128, 128, 0.1);
     border-color: grey;
     box-shadow: 0 12px 30px rgba(128, 128, 128, 0.2);
+    z-index: 3;  /* Raise z-index on hover for better shadow visibility */
 }
 
 /* Icon Styling */
@@ -208,6 +217,8 @@
         min-height: auto;
         transform: none;
         transition: none;
+        position: relative;
+        z-index: 2;
     }
 
     .services-format:hover {
@@ -278,10 +289,14 @@
         transform: translateY(20px); /* Reduced distance */
         animation: none;
         transition: none;
+        position: relative;
+        z-index: 2;
     }
 
     .services-format.show {
         animation: cardEntrance 0.5s ease-out forwards; /* Reduced duration */
+        position: relative;
+        z-index: 2;
     }
 
     @keyframes cardEntrance {

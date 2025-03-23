@@ -14,6 +14,8 @@ q.my-work{
     margin: 60px auto;
     max-width: 1200px;
     padding: 0 40px;
+    position: relative;
+    z-index: 2;  /* Keep MyWork section above particles */
 }
 .my-work-title{
     position: relative;
@@ -27,6 +29,8 @@ q.my-work{
     align-items: center;
     gap: 20px;
     text-align: center;
+    position: relative;
+    z-index: 2;  /* Keep title above particles */
 }
 .my-work-title h1{
     font-size: 48px;
@@ -78,6 +82,8 @@ q.my-work{
     max-width: 1200px;
     margin: 0 auto;
     margin-top: -5%;
+    position: relative;
+    z-index: 2;  /* Keep grid container above particles */
 }
 .my-work-container img{
     box-sizing: border-box;
@@ -111,6 +117,8 @@ q.my-work{
     color: rgba(255, 255, 255, 0.8);
     position: relative;
     overflow: hidden;
+    position: relative;
+    z-index: 2;  /* Keep button above particles */
 }
 
 .showmore:hover {
@@ -195,6 +203,12 @@ q.my-work{
         opacity: 0.3;
         transition: 0s;
     }
+
+    .repo-card, 
+    .showmore {
+        position: relative;
+        z-index: 2;  /* Maintain z-index on mobile */
+    }
 }
 .showmore a {
     display: flex;
@@ -213,11 +227,14 @@ q.my-work{
     min-height: 320px;
     max-width: 300px;
     border: 1px solid #333;
+    position: relative;
+    z-index: 2;  /* Keep cards above particles */
 }
 .repo-card:hover {
     background: #ffffff;
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 0 30px rgba(97, 219, 251, 0.15);
+    z-index: 3;  /* Raise z-index on hover for better shadow visibility */
 }
 .repo-card h3 {
     color: #fff;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Hero.css'
 import pfp from '../../assets/pfp.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -8,8 +8,70 @@ import { faGithub, faLinkedin, faInstagram, faDiscord, faXTwitter } from '@forta
 import Resume from '../../assets/SurajMallickResume.pdf'
 
 const Hero = () => {
+  useEffect(() => {
+    if (window.particlesJS) {
+      window.particlesJS('particles-js', {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
+          color: {
+            value: '#888888'
+          },
+          shape: {
+            type: 'circle'
+          },
+          opacity: {
+            value: 0.5,
+            random: false
+          },
+          size: {
+            value: 3,
+            random: true
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#888888',
+            opacity: 0.4,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: 'none',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            bounce: false
+          }
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: {
+              enable: true,
+              mode: 'repulse'
+            },
+            onclick: {
+              enable: true,
+              mode: 'push'
+            },
+            resize: true
+          }
+        },
+        retina_detect: true
+      });
+    }
+  }, []);
+
   return (
     <div id='home' className='hero'>
+      <div id="particles-js"></div>
       <img src={pfp} alt="" />
       <div className="hero-content">
         <h1>

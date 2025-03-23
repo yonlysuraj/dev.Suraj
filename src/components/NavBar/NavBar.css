@@ -6,6 +6,7 @@
     margin: 35px clamp(50px, 8vw, 120px); /* Responsive margins */
     position: relative;
     gap: 40px; /* Fixed gap between logo and nav items */
+    z-index: 2;  /* Keep navbar above particles */
 }
 
 /* Logo Styling */
@@ -28,6 +29,8 @@
     transition: transform 0.3s ease;
     flex-shrink: 0; /* Prevent logo from shrinking */
     margin-right: 0; /* Remove auto margin */
+    position: relative;
+    z-index: 2;  /* Keep logo above particles */
 }
 
 .navbar h1:hover {
@@ -50,6 +53,8 @@
     font-size: clamp(16px, 1.5vw, 24px); /* Responsive font size */
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 2;  /* Keep menu above particles */
 }
 
 .nav-connect {
@@ -61,6 +66,9 @@
     transition: all 0.3s ease;
     color: #fff;
     white-space: nowrap; /* Prevent button text wrapping */
+    position: relative;
+    z-index: 2;  /* Keep connect button above particles */
+    margin-top: 5px;
 }
 
 .nav-connect:hover {
