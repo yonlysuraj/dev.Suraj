@@ -1,8 +1,20 @@
-# React + Vite
+# 🚀 My Portfolio - Vite + React  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, built using **Vite** and **React** for high performance and fast development. It showcases my skills, projects, and professional experience as a **Cloud Engineer** specializing in **AWS, DevOps, and automation**.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack  
+- **Frontend**: Vite + React  
+- **Styling**: Tailwind CSS  
+- **Deployment**: GitHub Pages / Vercel / Netlify (choose one)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features  
+- 🌍 **About Me** – A brief introduction and career journey  
+- 💼 **Projects** – Showcasing my work with descriptions and links  
+- 🛠 **Skills** – Technologies and tools I use  
+- 📬 **Contact** – Easy ways to connect with me  
+
+## 🚀 Getting Started  
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/yourusername/your-portfolio.git
+cd your-portfolio
