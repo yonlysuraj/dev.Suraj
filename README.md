@@ -5,7 +5,7 @@ This is my personal portfolio website, built using **Vite** and **React** for hi
 ## 🛠 Tech Stack  
 - **Frontend**: Vite + React  
 - **Styling**: Tailwind CSS  
-- **Deployment**: GitHub Pages / Vercel / Netlify (choose one)  
+- **Deployment**: Netlify
 
 ## 📌 Features  
 - 🌍 **About Me** – A brief introduction and career journey  
