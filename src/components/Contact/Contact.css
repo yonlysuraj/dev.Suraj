@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px; /* Reduced from 60px */
-    margin: 40px auto; /* Reduced from 60px */
+    margin: -20px auto; /* Reduced from 60px */
     max-width: 1200px;
     padding: 0 20px;
     min-height: calc(100vh - 60px); /* Account for navbar */
