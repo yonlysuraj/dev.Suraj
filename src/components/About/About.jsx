@@ -2,19 +2,24 @@ import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import pfp from '../../assets/pfp2.jpg'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 const About = () => {
+  const titleRef = useScrollAnimation();
+  const leftRef = useScrollAnimation();
+  const rightRef = useScrollAnimation();
+
   return (
     <div id='about' className='about'>
-      <div className="about-title">
+      <div ref={titleRef} className="about-title scroll-animate">
         <h1>About Me<span>.</span></h1>
         <img src={theme_pattern} alt="" />  
       </div>
       <div className="about-sections">
-        <div className="about-left">
+        <div ref={leftRef} className="about-left scroll-animate delay-1">
           <img src={pfp} alt="Suraj Mallick" />
         </div>
-        <div className="about-right">
+        <div ref={rightRef} className="about-right scroll-animate delay-2">
           <div className="about-para">
             <p>I am Suraj Mallick, a Data Scientist and AI Developer with production experience building scalable Computer Vision and AI/ML solutions. Specialized in developing end-to-end vision pipelines, image and video processing workflows, and OCR-based intelligent document systems that deliver measurable business impact.</p>
             

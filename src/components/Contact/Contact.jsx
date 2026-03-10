@@ -4,8 +4,13 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 const Contact = () => {
+  const titleRef = useScrollAnimation();
+  const leftRef = useScrollAnimation();
+  const rightRef = useScrollAnimation();
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -31,12 +36,12 @@ const Contact = () => {
 
   return (
     <div id='contact' className='contact'>
-        <div className="contact-title">
+        <div ref={titleRef} className="contact-title scroll-animate">
             <h1>Contact Me<span>.</span></h1>
         <img src={theme_pattern} alt="" />
         </div>
       <div className="contact-section">
-        <div className="contact-left">
+        <div ref={leftRef} className="contact-left scroll-animate delay-1">
             <h1>Let's Talk</h1>
             <p>Im currently available to take on new project,so feel free to Contact Me</p>
             <div className="contact-details">
@@ -51,7 +56,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <form onSubmit={onSubmit} action="" className="contact-right">
+        <form ref={rightRef} onSubmit={onSubmit} action="" className="contact-right scroll-animate delay-2">
             <label htmlFor="name">Your Name:</label>
             <input type="text" name="name" placeholder='Enter your name:' />
             <label htmlFor="email">Your email:</label>

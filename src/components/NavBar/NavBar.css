@@ -136,6 +136,13 @@
 /* Mobile Menu Button */
 .nav-mob-open, .nav-mob-close {
     display: none;
+    cursor: pointer;
+}
+
+/* Ensure mobile menu icons are visible in light mode by inverting them */
+[data-theme="light"] .nav-mob-open,
+[data-theme="light"] .nav-mob-close {
+    filter: invert(1);
 }
 
 @media (max-width: 768px) {
@@ -229,6 +236,16 @@
         padding: 12px 25px;
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .nav-menu .anchor-link {
+        color: var(--text-primary);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .nav-menu li.active .anchor-link {
+        color: var(--accent);
     }
 
     .nav-connect {
