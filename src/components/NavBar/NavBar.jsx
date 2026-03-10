@@ -4,8 +4,9 @@ import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { scrollToSection } from '../../utils/smoothScroll';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
-const Navbar = () => {
+const Navbar = ({ isDark, onToggle }) => {
   const [menu, setMenu] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef();
@@ -29,7 +30,10 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <h1>dev.<span>Suraj</span></h1>
+      <div className="nav-brand">
+        <h1>dev.<span>Suraj</span></h1>
+        <ThemeToggle isDark={isDark} onToggle={onToggle} />
+      </div>
       <img 
         src={menu_open} 
         alt="menu" 

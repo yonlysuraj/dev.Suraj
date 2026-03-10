@@ -76,15 +76,15 @@ const Hero = () => {
       <div className="hero-content">
         <h1>
           <span>Hey! I'm Suraj Mallick,</span><br/>
-          a Cloud Engineer
+          an AI Developer & Data Scientist
         </h1>
         <TypeAnimation
           sequence={[
-            'Im a Cloud Engineer in Odisha, I have skills that might help you to grow your company',
+            'I\'m an AI Developer in Odisha, specializing in Computer Vision and ML',
             1000,
-            'I build cloud infrastructure',
+            'I build scalable ML pipelines',
             1000,
-            'I create scalable solutions',
+            'I create intelligent document systems',
             1000,
           ]}
           wrapper="p"

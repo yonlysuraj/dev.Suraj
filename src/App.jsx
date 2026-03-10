@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import NavBar from './components/NavBar/NavBar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About'
@@ -9,9 +9,31 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem('theme');
+    return saved ? saved === 'dark' : true;
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+    // Update particles colors when theme changes
+    if (window.pJSDom && window.pJSDom.length > 0) {
+      const pJS = window.pJSDom[0].pJS;
+      const particleColor = isDark ? '#888888' : '#000000';
+      const lineColor = isDark ? '#888888' : '#000000';
+      pJS.particles.color.value = particleColor;
+      pJS.particles.line_linked.color = lineColor;
+      pJS.fn.particlesRefresh();
+    }
+  }, [isDark]);
+
+  const toggleTheme = () => setIsDark(prev => !prev);
+
   return (
     <div>
-      <NavBar />
+      <NavBar isDark={isDark} onToggle={toggleTheme} />
       <div id="home">
         <Hero />
       </div>
@@ -36,3 +58,4 @@ const App = () => {
 };
 
 export default App
+

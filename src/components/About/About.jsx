@@ -16,17 +16,19 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>I am Suraj Mallick, a Cloud Engineer specializing in designing, deploying, and optimizing cloud infrastructure. With expertise in AWS cloud services and DevOps automation, I focus on building scalable, secure, and cost-efficient solutions.</p>
+            <p>I am Suraj Mallick, a Data Scientist and AI Developer with production experience building scalable Computer Vision and AI/ML solutions. Specialized in developing end-to-end vision pipelines, image and video processing workflows, and OCR-based intelligent document systems that deliver measurable business impact.</p>
             
             <div className="key-highlights">
-              <p>-Cloud Architecture & Infrastructure as Code (IaC): Designing resilient cloud environments using Terraform and CloudFormation.</p>
+              <p>-Computer Vision: OpenCV, OCR (Doctr, Tesseract), Vision LLMs, Object Detection.</p>
               <br />
-              <p>-DevOps & Automation: Implementing CI/CD pipelines, configuration management, and container orchestration with Docker and Kubernetes.</p>
+              <p>-Generative AI & NLP: Transformers, Hugging Face, LangChain, RAG Pipelines, LLM Integration.</p>
               <br />
-              <p>-Cloud Security & Cost Optimization: Enforcing security best practices, monitoring cloud environments, and optimizing resource utilization.</p>
+              <p>-Machine Learning: TensorFlow, PyTorch, Scikit-learn, XGBoost, Model Deployment.</p>
+              <br />
+              <p>-Cloud & Deployment: AWS (EC2, S3, SageMaker), Docker, FastAPI, CI/CD.</p>
             </div>
 
-            <p>I am passionate about problem-solving in cloud infrastructure, continuously exploring emerging technologies, and improving system reliability through automation and best practices.</p>
+            <p>I am passionate about building AI-driven document intelligence systems, optimizing ML models for production, and creating robust data solutions that solve complex enterprise challenges.</p>
           </div>
         </div>
       </div>

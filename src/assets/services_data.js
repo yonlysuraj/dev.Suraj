@@ -1,33 +1,33 @@
 const Services_Data = [
     {
         s_no: "01",
-        s_name: "MERN Stack Development",
-        s_desc: "Proficient in MongoDB, Express.js, React.js, and Node.js. Experienced in building full-stack web applications with modern JavaScript frameworks."
+        s_name: "Computer Vision",
+        s_desc: "OpenCV, Image Preprocessing, OCR (Doctr, Tesseract), Vision LLMs, Multimodal AI, Object Detection Basics, Image Augmentation."
     },
     {
         s_no: "02",
-        s_name: "Programming Languages",
-        s_desc: "Strong foundation in C++, Python, and JavaScript. Capable of writing efficient, clean, and maintainable code across different programming paradigms."
+        s_name: "Generative AI & NLP",
+        s_desc: "Transformers, Hugging Face, LangChain, RAG Pipelines, FAISS, Prompt Engineering, LLM Integration, BERT."
     },
     {
         s_no: "03",
-        s_name: "DevOps & Cloud",
-        s_desc: "Experience with DevOps practices, CI/CD pipelines, and cloud platforms. Familiar with containerization and cloud infrastructure management."
+        s_name: "Machine Learning",
+        s_desc: "TensorFlow, PyTorch, Scikit-learn, XGBoost, Deep Learning, Model Training, Evaluation, Hyper-parameter Tuning."
     },
     {
         s_no: "04",
-        s_name: "Shell Scripting",
-        s_desc: "Skilled in writing shell scripts for automation, system administration, and task optimization. Proficient in Bash scripting and command-line tools."
+        s_name: "Cloud & Deployment",
+        s_desc: "AWS (EC2, S3, Lambda, SageMaker), Docker, Flask, FastAPI, CI/CD, MLOps, Windows CLI Scripting."
     },
     {
         s_no: "05",
-        s_name: "Database Management",
-        s_desc: "Expertise in database design, optimization, and management. Experienced with both SQL and NoSQL databases, particularly MongoDB."
+        s_name: "Programming & Tools",
+        s_desc: "Python, Pandas, NumPy, SQL, PostgreSQL, Redis, MLflow, Git."
     },
     {
         s_no: "06",
-        s_name: "Version Control",
-        s_desc: "Proficient in Git and GitHub for source code management, collaboration, and version control. Experienced in managing repositories and team workflows."
+        s_name: "Consulting & Analytics",
+        s_desc: "Engineered scalable ML pipelines achieving high accuracy, optimized cloud infrastructure to reduce costs."
     }
 ]
 

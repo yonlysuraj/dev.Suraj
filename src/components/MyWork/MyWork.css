@@ -35,7 +35,7 @@ q.my-work{
 .my-work-title h1{
     font-size: 48px;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
@@ -43,12 +43,12 @@ q.my-work{
 .my-work-title h1 {
     font-size: 48px;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 .my-work-title span {
-    color: #61DBFB;
+    color: var(--accent);
     font-weight: 800;
 }
 .my-work-title::after {
@@ -217,7 +217,7 @@ q.my-work{
     color: inherit;
 }
 .repo-card {
-    background: #1a1a1a;
+    background: var(--bg-secondary);
     border-radius: 16px;
     padding: 30px;
     transition: all 0.3s ease;
@@ -226,45 +226,45 @@ q.my-work{
     justify-content: space-between;
     min-height: 320px;
     max-width: 300px;
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
     position: relative;
     z-index: 2;  /* Keep cards above particles */
 }
 .repo-card:hover {
-    background: #ffffff;
+    background: var(--repo-card-hover-bg);
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 0 30px rgba(97, 219, 251, 0.15);
     z-index: 3;  /* Raise z-index on hover for better shadow visibility */
 }
 .repo-card h3 {
-    color: #fff;
+    color: var(--text-primary);
     font-size: 22px;
     margin-bottom: 20px;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 .repo-card:hover h3 {
-    color: #1a1a1a;
+    color: var(--repo-card-hover-text);
 }
 .repo-card p {
-    color: #888;
+    color: var(--text-secondary);
     font-size: 15px;
     line-height: 1.6;
     margin-bottom: 25px;
     transition: color 0.3s ease;
 }
 .repo-card:hover p {
-    color: #555;
+    color: var(--repo-card-hover-text);
 }
 .repo-stats {
     display: flex;
     gap: 20px;
     margin: 20px 0;
-    color: #888;
+    color: var(--text-secondary);
     font-size: 16px;
 }
 .repo-card a {
-    color: #fff;
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -272,7 +272,7 @@ q.my-work{
     align-self: flex-start;
 }
 .repo-card:hover a {
-    color: #1a1a1a;
+    color: var(--repo-card-hover-text);
 }
 .showmore a {
     display: flex;
@@ -338,19 +338,19 @@ q.my-work{
     .repo-card:hover {
         transform: none;
         box-shadow: none;
-        background: #1a1a1a;
+        background: var(--bg-secondary);
     }
 
     .repo-card:hover h3 {
-        color: #fff;
+        color: var(--text-primary);
     }
 
     .repo-card:hover p {
-        color: #888;
+        color: var(--text-secondary);
     }
 
     .repo-card:hover a {
-        color: #fff;
+        color: var(--text-primary);
     }
 
     /* First, remove all mobile-specific button animations */
@@ -415,7 +415,7 @@ q.my-work{
     .repo-card:hover {
         transform: none;
         box-shadow: none;
-        background: #1a1a1a;
+        background: var(--bg-secondary);
     }
 }
 @keyframes shine {

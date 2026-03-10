@@ -21,14 +21,14 @@
 .services-title h1 {
     font-size: 48px;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
 }
 
 .services-title span {
-    color: #61DBFB;
+    color: var(--accent);
     font-weight: 800;
 }
 
@@ -67,10 +67,10 @@
     gap: 30px;
     padding: 3rem 2rem;
     border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-light);
     transition: all 0.4s ease;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-card);
     backdrop-filter: blur(10px);
     min-height: 450px; /* Increased height */
     max-width: 320px; /* Reduced width */
@@ -81,7 +81,7 @@
 
 .services-format:hover {
     transform: translateY(-8px);
-    background: rgba(128, 128, 128, 0.1);
+    background: var(--bg-card-hover);
     border-color: grey;
     box-shadow: 0 12px 30px rgba(128, 128, 128, 0.2);
     z-index: 3;  /* Raise z-index on hover for better shadow visibility */
@@ -89,7 +89,7 @@
 
 /* Icon Styling */
 .service-icon {
-    color: #888;
+    color: var(--text-secondary);
     font-size: 48px; /* Increased icon size */
     margin: 20px 0;
     transition: all 0.3s ease-in-out;
@@ -142,11 +142,11 @@
     font-size: 26px;
     font-weight: 600;
     margin: 1rem 0;
-    color: white;
+    color: var(--text-primary);
 }
 
 .services-format p {
-    color: #888;
+    color: var(--text-secondary);
     font-size: 17px;
     line-height: 1.7;
     max-width: 280px;
@@ -172,6 +172,50 @@
     color: grey;
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+/* Light mode: white cards, turn black on hover */
+[data-theme="light"] .services-format {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .services-format h2 {
+    color: #111111;
+}
+
+[data-theme="light"] .services-format p {
+    color: #6b6b6b;
+}
+
+[data-theme="light"] .service-number {
+    color: #999999;
+}
+
+[data-theme="light"] .service-icon {
+    color: #6b6b6b;
+}
+
+[data-theme="light"] .services-format:hover {
+    background: #111111;
+    border: 1px solid #111111;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .services-format:hover h2 {
+    color: #ffffff;
+}
+
+[data-theme="light"] .services-format:hover p {
+    color: #bbbbbb;
+}
+
+[data-theme="light"] .services-format:hover .service-number {
+    color: #888888;
+}
+
+[data-theme="light"] .services-format:hover .service-icon {
+    color: #bbbbbb;
 }
 
 /* Responsive Design */

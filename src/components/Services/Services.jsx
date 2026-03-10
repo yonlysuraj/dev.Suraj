@@ -2,15 +2,15 @@ import React, { useEffect } from "react";
 import "./Services.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import ServicesData from "../../assets/services_data";
-import { FaReact, FaCode, FaAws, FaTerminal, FaDatabase, FaGithub } from "react-icons/fa";
+import { FaEye, FaRobot, FaProjectDiagram, FaCloud, FaLaptopCode, FaChartPie } from "react-icons/fa";
 
 const icons = [
-  { component: FaReact, color: "#61DBFB" },
-  { component: FaCode, color: "#ff6f00" },
-  { component: FaAws, color: "#FF9900" },
-  { component: FaTerminal, color: "#00ff00" },
-  { component: FaDatabase, color: "#00758f" },
-  { component: FaGithub, color: "#ffff" }
+  { component: FaEye, color: "#61DBFB" },
+  { component: FaRobot, color: "#ff6f00" },
+  { component: FaProjectDiagram, color: "#FF9900" },
+  { component: FaCloud, color: "#00ff00" },
+  { component: FaLaptopCode, color: "#00758f" },
+  { component: FaChartPie, color: "#ffff" }
 ];
 
 const Services = () => {

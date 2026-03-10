@@ -27,14 +27,14 @@
 .education-title h1 {
     font-size: 48px;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
 }
 
 .education-title span {
-    color: #61DBFB;
+    color: var(--accent);
     font-weight: 800;
 }
 
@@ -107,7 +107,7 @@
     background: rgba(255, 255, 255, 0.03);
     padding: 0;
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-light);
     transition: all 0.3s ease;
     height: 100%;
     display: flex;
@@ -134,7 +134,7 @@
 
 .timeline-content h3 {
     font-size: 24px;
-    color: #fff;
+    color: var(--text-primary);
     margin-bottom: 10px;
 }
 
@@ -176,7 +176,7 @@
 
 .timeline-text h3 {
     font-size: 24px;
-    color: #fff;
+    color: var(--text-primary);
     margin-bottom: 10px;
     font-weight: 600;
     letter-spacing: 0.5px;

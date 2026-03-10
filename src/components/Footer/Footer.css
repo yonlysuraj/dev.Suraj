@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background: #1a1a1a;
+    background: var(--bg-secondary);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
     z-index: 2;  /* Add this to keep footer above particles */
@@ -29,7 +29,7 @@
 
 .footer-top-left p {
     font-size: 16px;
-    color: #888;
+    color: var(--text-secondary);
     line-height: 1.6;
     max-width: 350px;
 }
@@ -50,8 +50,8 @@
     padding: 12px 0;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #333;
-    color: #fff;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
     font-size: 15px;
     width: 250px;
     transition: all 0.3s ease;
@@ -63,13 +63,13 @@
 }
 
 .footer-email-input input::placeholder {
-    color: #666;
+    color: var(--text-muted);
 }
 
 .footer-subscribe {
     font-size: 15px;
     padding: 10px 25px;
-    color: #888;
+    color: var(--text-secondary);
     background: transparent;
     border: none;
     cursor: pointer;
@@ -77,7 +77,7 @@
 }
 
 .footer-subscribe:hover {
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .footer-bottom {
@@ -93,7 +93,7 @@
 }
 
 .footer-bottom a {
-    color: #666;
+    color: var(--text-muted);
     text-decoration: none;
     transition: color 0.3s ease;
     position: relative;
@@ -111,7 +111,7 @@
 }
 
 .footer-bottom a:hover {
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .footer-bottom a:hover::after {

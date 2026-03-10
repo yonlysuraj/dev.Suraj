@@ -18,10 +18,11 @@ const Education = () => {
               <img src={siliconUni} alt="Silicon Institute" />
             </div>
             <div className="timeline-text">
-              <h3>Bachelor of Technology in Computer Science</h3>
+              <h3>B.Tech in Computer Science and Technology</h3>
               <p className="timeline-date">2020 - 2024</p>
               <p className="timeline-details">
-                Completed my B.Tech Graduation in Computer Science Engineering
+                Silicon University, Bhubaneswar<br/>
+                CGPA: 7.93
               </p>
             </div>
           </div>
@@ -34,10 +35,12 @@ const Education = () => {
               <img src={davSchool} alt="DAV Public School" />
             </div>
             <div className="timeline-text">
-              <h3>Higher Secondary Education</h3>
+              <h3>Higher Secondary & Secondary Education</h3>
               <p className="timeline-date">2018 - 2020</p>
               <p className="timeline-details">
-                DAV Public School, CDA, Cuttack
+                DAV Public School, Cuttack<br/>
+                12th CBSE: 72.6% (2020)<br/>
+                10th CBSE: 89.4% (2018)
               </p>
             </div>
           </div>

@@ -23,13 +23,13 @@
 .contact-title h1 {
     font-size: 48px;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .contact-title span {
-    color: #61DBFB;
+    color: var(--accent);
     font-weight: 800;
 }
 
@@ -67,11 +67,11 @@
 .contact-left h1 {
     font-size: 36px; /* Reduced from 42px */
     font-weight: 600;
-    color: #888;
+    color: var(--text-secondary);
 }
 
 .contact-left p {
-    color: #fff;
+    color: var(--text-primary);
     font-size: 18px;
     line-height: 1.6;
 }
@@ -88,13 +88,13 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    color: #888;
+    color: var(--text-secondary);
     font-size: 16px;
     transition: all 0.3s ease;
 }
 
 .detail:hover {
-    color: #fff;
+    color: var(--text-primary);
     transform: translateX(5px);
 }
 
@@ -106,7 +106,7 @@
 }
 
 .contact-right label {
-    color: #888;
+    color: var(--text-secondary);
     font-size: 16px;
     font-weight: 500;
 }
@@ -115,10 +115,10 @@
 .contact-right textarea {
     width: 100%;
     padding: 12px; /* Reduced from 15px */
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #333;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    color: #fff;
+    color: var(--text-primary);
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -129,17 +129,17 @@
 .contact-right input:focus,
 .contact-right textarea:focus {
     outline: none;
-    border-color: #fff;
-    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--text-primary);
+    background: var(--input-focus-bg);
 }
 
 .contact-submit {
     align-self: flex-start;
     padding: 15px 40px;
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid var(--text-primary);
     border-radius: 30px;
-    color: #fff;
+    color: var(--text-primary);
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -148,8 +148,8 @@
 }
 
 .contact-submit:hover {
-    background: #fff;
-    color: #1a1a1a;
+    background: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
     transform: translateY(-3px);
 }
 
