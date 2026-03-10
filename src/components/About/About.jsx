@@ -21,7 +21,7 @@ const About = () => {
         </div>
         <div ref={rightRef} className="about-right scroll-animate delay-2">
           <div className="about-para">
-            <p>I am Suraj Mallick, a Data Scientist and AI Developer with production experience building scalable Computer Vision and AI/ML solutions. Specialized in developing end-to-end vision pipelines, image and video processing workflows, and OCR-based intelligent document systems that deliver measurable business impact.</p>
+            <p>I am Suraj Mallick, a Generative AI Engineer with production experience building scalable Computer Vision and AI/ML solutions. Specialized in developing end-to-end vision pipelines, image and video processing workflows, and OCR-based intelligent document systems that deliver measurable business impact.</p>
             
             <div className="key-highlights">
               <p>-Computer Vision: OpenCV, OCR (Doctr, Tesseract), Vision LLMs, Object Detection.</p>

@@ -29,7 +29,10 @@
 }
 
 @media (max-width: 768px) {
+    .theme-toggle {
+        padding: 2px;
+    }
     .toggle-icon-btn {
-        font-size: 26px;
+        font-size: 22px;
     }
 }

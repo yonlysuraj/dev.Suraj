@@ -76,11 +76,11 @@ const Hero = () => {
       <div className="hero-content">
         <h1>
           <span>Hey! I'm Suraj Mallick,</span><br/>
-          an AI Developer & Data Scientist
+          a Generative AI Engineer
         </h1>
         <TypeAnimation
           sequence={[
-            'I\'m an AI Developer in Odisha, specializing in Computer Vision and ML',
+            'I\'m a Generative AI Engineer in Odisha, specializing in Computer Vision and ML',
             1000,
             'I build scalable ML pipelines',
             1000,

@@ -244,6 +244,7 @@
         font-size: 36px; /* Reduced from 42px */
         text-align: center;
         line-height: 1.3;
+        padding: 0 15px; /* Add space on left and right */
     }
 
     .hero p {
